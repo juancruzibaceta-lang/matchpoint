@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchPoint - Encontrá tu cancha y torneo al instante</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos para las tarjetas con imágenes reales y el mapa integrado */
+        .card-img-1 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://atcsports.io/uploads/clubs/bg/distrito-pasco-futbol-caba.jpeg?705216'); }
+        .card-img-2 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://atcsports.io/uploads/clubs/bg/que-golazo-caba.jpeg?364139'); }
+        .card-img-3 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://atcsports.io/uploads/clubs/bg/club-centenera-parque-chacabuco.jpeg?186828'); }
+        
+        .img-card-bg {
+            background-size: cover;
+            background-position: center;
+            height: 160px;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        /* Ajuste responsivo para el mapa de Google Maps */
+        .map-interactive iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / LOGO / NAV -->
+    <header>
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#00b84c"/>
+                <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" fill="white"/>
+            </svg>
+            <span>Match<span style="color: #00b84c;">Point</span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Busca Cancha</a></li>
+                <li><a href="#">Torneos</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#" class="btn-cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO / BUSCADOR -->
+        <section class="hero">
+            <h1>Encontrá tu cancha y torneo al instante</h1>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" id="ubicacion" placeholder="Ubicación">
+                </div>
+                <div class="form-group">
+                    <label for="deporte">Deporte</label>
+                    <select id="deporte">
+                        <option value="futbol5">Fútbol 5</option>
+                        <option value="futbol7">Fútbol 7</option>
+                        <option value="padel">Pádel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" value="2026-01-01">
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora</label>
+                    <select id="hora">
+                        <option value="18:00">18:00 hs</option>
+                        <option value="19:00">19:00 hs</option>
+                        <option value="20:00">20:00 hs</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-buscar">BUSCAR CANCHAS</button>
+            </form>
+            <div class="hero-features">
+                <span>🛡️ Complejos Verificados</span>
+                <span>🏆 Torneos Propios</span>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DESTACADOS -->
+        <section class="destacados">
+            <h2>Complejos Destacados</h2>
+            <div class="grid-images">
+                <article class="card">
+                    <div class="img-card-bg card-img-1">Distrito Pasco</div>
+                    <h3>Distrito Pasco Fútbol</h3>
+                </article>
+                <article class="card">
+                    <div class="img-card-bg card-img-2">Qué Golazo</div>
+                    <h3>Qué Golazo</h3>
+                </article>
+                <article class="card">
+                    <div class="img-card-bg card-img-3">Club Centenera</div>
+                    <h3>Club Centenera</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MAPA Y UBICACIÓN CON IFRAME REAL -->
+        <section class="map-container">
+            <h2>ENCUÉNTRANOS</h2>
+            <div class="map-content">
+                <div class="map-interactive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210120.32172074766!2d-58.69022112272457!3d-34.62615428232218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb000eb07b65%3A0xa885b0d9b132caa2!2sQu%C3%A9%20Golazo!5e0!3m2!1ses-419!2sar!4v1791415028659!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="map-details">
+                    <h3>DETALLES DE UBICACIÓN</h3>
+                    <p><strong>Distrito Pasco Fútbol</strong><br>Pasco 1250, CABA</p>
+                    <p><strong>Qué Golazo</strong><br>Av. Corrientes 4500, CABA</p>
+                    <p><strong>Club Centenera</strong><br>Centenera 1200, Parque Chacabuco</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contact-section">
+            <div class="formulario">
+                <h2>CONTACTO Y NOVEDADES</h2>
+                <form>
+                    <div class="input-row">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <textarea placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+  <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Info -->
+            <div class="footer-col">
+                <h3>MatchPoint</h3>
+                <p>La plataforma definitiva para encontrar canchas y organizar torneos en tiempo real.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="#">Buscar Cancha</a>
+                <a href="#">Torneos</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Nosotros</a>
+            </div>
+
+            <!-- Columna 3: Soporte y Legal -->
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <a href="#">Ayuda</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Contacto</a>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="#">🌐 Web</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">✖️ X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MatchPoint. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
