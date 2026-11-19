@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos - MatchPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / LOGO / NAV -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#00b84c"/>
+                <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" fill="white"/>
+            </svg>
+            <span>Match<span style="color: #00b84c;">Point</span></span>
+        </a>
+
+        <!-- Menú hamburguesa (solo se ve en tablet y celular, funciona solo con CSS) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="buscar-cancha.html">Busca Cancha</a></li>
+                <li><a href="torneos.html" class="activo">Torneos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="cuenta.html" class="btn-cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Torneos MatchPoint</h1>
+            <p>Torneos amateur en complejos verificados de la ciudad. Anotá a tu equipo y seguí los resultados acá.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>Próximos torneos</h2>
+            <div class="grid-torneos">
+                <article class="torneo-card">
+                    <div class="img-card-bg card-img-2"><span class="etiqueta">Inscripción abierta</span></div>
+                    <div class="torneo-info">
+                        <p class="torneo-deporte">Fútbol 5</p>
+                        <h3>Copa MatchPoint Verano</h3>
+                        <ul class="torneo-datos">
+                            <li>📅 Sábados desde el 10/01/2026</li>
+                            <li>📍 Qué Golazo</li>
+                            <li>🏆 Trofeo + $500.000</li>
+                            <li>💲 $120.000 por equipo</li>
+                        </ul>
+                        <div class="cupos">
+                            <div class="cupos-barra"><div style="width: 75%;"></div></div>
+                            <p>12 de 16 equipos inscriptos</p>
+                        </div>
+                        <a href="cuenta.html" class="btn-enviar">INSCRIBIR EQUIPO</a>
+                    </div>
+                </article>
+                <article class="torneo-card">
+                    <div class="img-card-bg card-img-3"><span class="etiqueta">Inscripción abierta</span></div>
+                    <div class="torneo-info">
+                        <p class="torneo-deporte">Pádel</p>
+                        <h3>Liga de Pádel Parejas</h3>
+                        <ul class="torneo-datos">
+                            <li>📅 Domingos desde el 18/01/2026</li>
+                            <li>📍 Club Centenera</li>
+                            <li>🏆 Paletas + medallas</li>
+                            <li>💲 $40.000 por equipo</li>
+                        </ul>
+                        <div class="cupos">
+                            <div class="cupos-barra"><div style="width: 83%;"></div></div>
+                            <p>20 de 24 equipos inscriptos</p>
+                        </div>
+                        <a href="cuenta.html" class="btn-enviar">INSCRIBIR EQUIPO</a>
+                    </div>
+                </article>
+                <article class="torneo-card">
+                    <div class="img-card-bg card-img-1"><span class="etiqueta">Cupos completos</span></div>
+                    <div class="torneo-info">
+                        <p class="torneo-deporte">Fútbol 7</p>
+                        <h3>Relámpago Nocturno</h3>
+                        <ul class="torneo-datos">
+                            <li>📅 Viernes 23/01/2026, 20 hs</li>
+                            <li>📍 Distrito Pasco</li>
+                            <li>🏆 Camisetas + trofeo</li>
+                            <li>💲 $150.000 por equipo</li>
+                        </ul>
+                        <div class="cupos">
+                            <div class="cupos-barra"><div style="width: 100%;"></div></div>
+                            <p>8 de 8 equipos inscriptos</p>
+                        </div>
+                        <a href="cuenta.html" class="btn-enviar">INSCRIBIR EQUIPO</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris">
+            <h2>Cómo participar</h2>
+            <ol class="pasos">
+                <li><strong>Creá tu cuenta</strong><span>Registrate gratis como jugador o capitán.</span></li>
+                <li><strong>Armá tu equipo</strong><span>Sumá a tus compañeros con su e-mail.</span></li>
+                <li><strong>Inscribite</strong><span>Elegí el torneo y reservá tu lugar.</span></li>
+                <li><strong>A jugar</strong><span>Mirá el fixture y la tabla en tiempo real.</span></li>
+            </ol>
+        </section>
+
+        <section class="seccion">
+            <h2>Tabla de posiciones · Copa MatchPoint Verano</h2>
+            <div class="tabla-scroll">
+                <table class="tabla">
+                    <thead>
+                        <tr><th>#</th><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>DG</th><th>Pts</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Los Pibes de Almagro</td><td>4</td><td>4</td><td>0</td><td>0</td><td>+11</td><td>12</td></tr>
+                        <tr><td>2</td><td>Deportivo Corrientes</td><td>4</td><td>3</td><td>0</td><td>1</td><td>+6</td><td>9</td></tr>
+                        <tr><td>3</td><td>Real Chacabuco</td><td>4</td><td>2</td><td>1</td><td>1</td><td>+3</td><td>7</td></tr>
+                        <tr><td>4</td><td>Atlético Pasco</td><td>4</td><td>1</td><td>1</td><td>2</td><td>-2</td><td>4</td></tr>
+                        <tr><td>5</td><td>Sporting Once</td><td>4</td><td>0</td><td>0</td><td>4</td><td>-18</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Info -->
+            <div class="footer-col">
+                <h3>MatchPoint</h3>
+                <p>La plataforma definitiva para encontrar canchas y organizar torneos en tiempo real.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="buscar-cancha.html">Buscar Cancha</a>
+                <a href="torneos.html">Torneos</a>
+                <a href="comunidad.html">Comunidad</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+
+            <!-- Columna 3: Soporte y Legal -->
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <a href="nosotros.html#preguntas">Ayuda</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="../portfolio.html">🌐 Mi portfolio</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">✖️ X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MatchPoint. Todos los derechos reservados.</p>
+            <p class="credito">Proyecto de <a href="../portfolio.html">Juan Cruz Ibaceta</a>. Mirá mi portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
