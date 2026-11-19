@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Juan Cruz Ibaceta | Portfolio</title>
+    <meta name="description" content="Portfolio de Juan Cruz Ibaceta, estudiante de Licenciatura en Comunicación Digital en la Universidad de Palermo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="top">
+        <a href="#inicio" class="sello" aria-label="Ir al inicio">J.C</a>
+        <nav aria-label="Secciones">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <!-- PORTADA -->
+        <section class="portada">
+            <h1 class="nombre">
+                <span>Juan Cruz</span>
+                <span>Ibaceta</span>
+            </h1>
+            <div class="portada-texto">
+                <p class="bajada">Tengo 19 años y estudio Licenciatura en Comunicación Digital en la Universidad de Palermo. Me interesa contar ideas con diseño, estrategia y contenido.</p>
+                <p class="portada-acciones">
+                    <a href="#proyectos" class="boton">Ver proyectos</a>
+                    <a href="https://www.instagram.com/portfolio.juanibaceta" class="boton boton-linea" target="_blank" rel="noopener">Instagram</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- ÍNDICE DE PROYECTOS -->
+        <section class="indice" id="proyectos" aria-labelledby="titulo-proyectos">
+            <h2 id="titulo-proyectos">Proyectos</h2>
+            <ol class="indice-lista">
+                <li>
+                    <a href="#matchpoint">
+                        <span class="indice-num">1</span>
+                        <span class="indice-nombre">MatchPoint</span>
+                        <span class="indice-dato">Sitio web para reservar canchas y torneos</span>
+                        <span class="indice-materia">Contenidos y Creatividad I</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#chocolatier">
+                        <span class="indice-num">2</span>
+                        <span class="indice-nombre">Chocolatier Cel</span>
+                        <span class="indice-dato">Estrategia de marca y campaña en redes</span>
+                        <span class="indice-materia">Publicidad I</span>
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <!-- PROYECTO 1: MATCHPOINT -->
+        <article class="caso caso-match" id="matchpoint" aria-labelledby="titulo-match">
+            <div class="caso-cabecera">
+                <p class="caso-materia">Contenidos y Creatividad I, 2026</p>
+                <h2 id="titulo-match">MatchPoint</h2>
+                <p class="caso-resumen">Una página web para encontrar canchas de fútbol 5, fútbol 7 y pádel, y anotarse en torneos amateur en complejos reales de la Ciudad de Buenos Aires.</p>
+                <a href="index.html" class="boton boton-match">Abrir el sitio</a>
+            </div>
+
+            <figure class="pantallas">
+                <div class="navegador">
+                    <div class="navegador-barra"><i></i><i></i><i></i></div>
+                    <img src="img/matchpoint-desktop.jpg" alt="Inicio de MatchPoint en computadora: buscador de canchas y complejos destacados" loading="lazy">
+                </div>
+                <div class="celular">
+                    <img src="img/matchpoint-celular.jpg" alt="MatchPoint en celular, con el buscador en una sola columna" loading="lazy">
+                </div>
+            </figure>
+
+            <div class="caso-grilla">
+                <div class="bloque">
+                    <h3>El problema</h3>
+                    <p>Organizar un partido en Buenos Aires es un lío: la información está repartida en redes y llamados, nunca sabés si el horario está libre de verdad y no hay un solo lugar con todos los complejos y torneos.</p>
+                </div>
+                <div class="bloque">
+                    <h3>Lo que hice</h3>
+                    <p>Diseñé y programé en HTML y CSS un sitio de seis secciones: inicio con buscador, buscar cancha, torneos, comunidad, nosotros y cuenta. Analicé a la competencia (ATC Sports) para encontrar qué mejorar.</p>
+                </div>
+                <div class="bloque">
+                    <h3>Cómo se adapta</h3>
+                    <p>El sitio funciona en seis resoluciones, de pantallas grandes a celulares chicos, con un menú hamburguesa hecho solo con CSS.</p>
+                </div>
+            </div>
+
+            <div class="proceso">
+                <h3>Del boceto al sitio</h3>
+                <ol class="proceso-pasos">
+                    <li>
+                        <img src="img/matchpoint-boceto.jpg" alt="Wireframe dibujado a mano en un cuaderno" loading="lazy">
+                        <p><strong>Wireframe a mano.</strong> Dónde va cada parte de la página.</p>
+                    </li>
+                    <li>
+                        <img src="img/matchpoint-baja.jpg" alt="Wireframe digital en cajas grises" loading="lazy">
+                        <p><strong>Wireframe digital.</strong> La estructura ordenada, sin color.</p>
+                    </li>
+                    <li>
+                        <img src="img/matchpoint-alta.jpg" alt="Wireframe de alta fidelidad con la marca aplicada" loading="lazy">
+                        <p><strong>Alta fidelidad.</strong> Colores, tipografía y contenido final.</p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="paleta">
+                <h3>Color 60/30/10</h3>
+                <div class="paleta-barra" role="img" aria-label="60% blanco, 30% gris oscuro, 10% verde">
+                    <span style="flex: 60; background: #f9f9f9; color: #333;">60% blanco <small>#FFFFFF</small></span>
+                    <span style="flex: 30; background: #333333; color: #fff;">30% gris <small>#333333</small></span>
+                    <span style="flex: 10; background: #00b84c; color: #fff;">10% <small>#00B84C</small></span>
+                </div>
+                <p>El verde aparece solo en lo importante: botones, logo y bordes. Así la página se ve limpia y se lee bien en cualquier pantalla.</p>
+            </div>
+        </article>
+
+        <!-- PROYECTO 2: CHOCOLATIER CEL -->
+        <article class="caso caso-choco" id="chocolatier" aria-labelledby="titulo-choco">
+            <div class="caso-cabecera">
+                <img src="img/choco-logo.png" alt="" class="choco-logo" width="120" height="120">
+                <p class="caso-materia">Publicidad I, 2026</p>
+                <h2 id="titulo-choco">Chocolatier Cel</h2>
+                <p class="caso-resumen">Un emprendimiento familiar de chocolates y pastelería artesanal que vendía casi solo a familia y amigos. Armé su estrategia de marca y una campaña de seis semanas para las Fiestas.</p>
+                <a href="https://www.instagram.com/chocolatier_cel" class="boton boton-choco" target="_blank" rel="noopener">Ver @chocolatier_cel</a>
+            </div>
+
+            <div class="carrusel-zona">
+                <h3>El carrusel de presentación</h3>
+                <p class="carrusel-ayuda">Deslizá para ver las cinco placas que diseñé para Instagram.</p>
+                <ol class="carrusel" tabindex="0" aria-label="Carrusel de Instagram de Chocolatier Cel">
+                    <li><img src="img/choco-1-portada.jpg" alt="Placa 1: logo de Chocolatier Cel, enfoque artesanal y de calidad" loading="lazy"></li>
+                    <li><img src="img/choco-2-desafio.jpg" alt="Placa 2: el desafío y el propósito del emprendimiento familiar" loading="lazy"></li>
+                    <li><img src="img/choco-3-como-compramos.jpg" alt="Placa 3: cómo compramos hoy, por WhatsApp e Instagram" loading="lazy"></li>
+                    <li><img src="img/choco-4-producto.jpg" alt="Placa 4: el producto en acción, fotos de cookies y chocolates" loading="lazy"></li>
+                    <li><img src="img/choco-5-pedido.jpg" alt="Placa 5: descubrí la diferencia de lo hecho a mano" loading="lazy"></li>
+                </ol>
+            </div>
+
+            <div class="choco-historia">
+                <img src="img/choco-alfajores.jpg" alt="Alfajores artesanales bañados en chocolate">
+                <div>
+                    <h3>La marca</h3>
+                    <p>Nació para juntar fondos para el viaje de estudio del hijo de la emprendedora. Después de un curso de chocolatería sumó alfajores, budines y cookies. Su logo es un trisquel celta: pasado, presente y futuro.</p>
+                    <blockquote class="puv">
+                        <p>Chocolatería artesanal hecha con dedicación, con el trato cercano de una marca familiar.</p>
+                        <cite>Propuesta única de valor</cite>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="caso-grilla">
+                <div class="bloque">
+                    <h3>A quién le hablamos</h3>
+                    <p>Adultos de 25 a 55 años de CABA y GBA que regalan y se dan gustos, y piden por WhatsApp o Instagram. La buyer persona es Laura, 34 años: quiere regalar algo hecho con cariño, pero no tiene tiempo ni sabe en quién confiar.</p>
+                </div>
+                <div class="bloque">
+                    <h3>El mensaje</h3>
+                    <p>Lo hecho por alguien que se esmera nos hace sentir cuidados. De ese insight sale el claim de la campaña:</p>
+                    <p class="claim">Hecho a mano, con todo el corazón.</p>
+                </div>
+                <div class="bloque objetivo">
+                    <h3>El objetivo</h3>
+                    <p class="objetivo-num"><span>70</span><span aria-hidden="true">→</span><span>100</span></p>
+                    <p>Seguidores en Instagram en seis semanas, del 23/11 al 31/12/2026: unos cinco nuevos por semana.</p>
+                </div>
+            </div>
+
+            <div class="campana">
+                <div>
+                    <h3>Seis semanas de campaña</h3>
+                    <ol class="etapas">
+                        <li><strong>23/11 al 29/11</strong> Expectativa y awareness</li>
+                        <li><strong>30/11 al 13/12</strong> Consideración y storytelling</li>
+                        <li><strong>14/12 al 24/12</strong> Conversión de Fiestas</li>
+                        <li><strong>26/12 al 31/12</strong> Fidelización y balance</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Presupuesto</h3>
+                    <ul class="presupuesto">
+                        <li><span>Meta Ads</span><b style="--p: 50%;"></b><em>50%</em></li>
+                        <li><span>Contenido</span><b style="--p: 25%;"></b><em>25%</em></li>
+                        <li><span>Packaging</span><b style="--p: 15%;"></b><em>15%</em></li>
+                        <li><span>Imprevistos</span><b style="--p: 10%;"></b><em>10%</em></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- SOBRE MÍ -->
+        <section class="sobre" id="sobre-mi" aria-labelledby="titulo-sobre">
+            <div class="sobre-sello" aria-hidden="true">J.C</div>
+            <div class="sobre-texto">
+                <h2 id="titulo-sobre">Sobre mí</h2>
+                <p class="sobre-lead">Soy Juan Cruz Ibaceta, tengo 19 años y estoy en primer año de la Licenciatura en Comunicación Digital en la Universidad de Palermo.</p>
+                <p>Me gusta que cada proyecto resuelva algo concreto: que alguien encuentre una cancha en segundos o que un emprendimiento familiar llegue a más gente. En Contenidos y Creatividad I diseñé y programé MatchPoint. En Publicidad I armé la estrategia y la campaña de Chocolatier Cel.</p>
+                <dl class="datos">
+                    <div><dt>Edad</dt><dd>19 años</dd></div>
+                    <div><dt>Universidad</dt><dd>Universidad de Palermo</dd></div>
+                    <div><dt>Carrera</dt><dd>Licenciatura en Comunicación Digital</dd></div>
+                    <div><dt>Año</dt><dd>1er año, 2026</dd></div>
+                </dl>
+                <h3>Lo que aprendí haciendo</h3>
+                <ul class="habilidades">
+                    <li>Diseño web con HTML y CSS</li>
+                    <li>Wireframes y prototipos</li>
+                    <li>Diseño responsive</li>
+                    <li>Estrategia de marca</li>
+                    <li>Investigación de audiencias</li>
+                    <li>Contenido para Instagram</li>
+                    <li>Planificación de campañas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+            <h2 id="titulo-contacto">¿Hablamos?</h2>
+            <p>Escribime por Instagram para ver más trabajos o charlar sobre un proyecto.</p>
+            <a href="https://www.instagram.com/portfolio.juanibaceta" class="contacto-link" target="_blank" rel="noopener">@portfolio.juanibaceta</a>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>© 2026 Juan Cruz Ibaceta</p>
+        <p>Licenciatura en Comunicación Digital, Universidad de Palermo</p>
+        <p><a href="index.html">Visitá MatchPoint</a></p>
+    </footer>
+
+</body>
+</html>
