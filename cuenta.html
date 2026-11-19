@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - MatchPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / LOGO / NAV -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#00b84c"/>
+                <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" fill="white"/>
+            </svg>
+            <span>Match<span style="color: #00b84c;">Point</span></span>
+        </a>
+
+        <!-- Menú hamburguesa (solo se ve en tablet y celular, funciona solo con CSS) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="buscar-cancha.html">Busca Cancha</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="cuenta.html" class="btn-cuenta activo">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cuenta-layout">
+            <div class="formulario cuenta-form">
+                <h2>INICIAR SESIÓN</h2>
+                <form>
+                    <label for="login-mail">E-mail</label>
+                    <input type="email" id="login-mail" placeholder="tu@email.com">
+                    <label for="login-pass">Contraseña</label>
+                    <input type="password" id="login-pass" placeholder="••••••••">
+                    <a href="#" class="link-chico">¿Olvidaste tu contraseña?</a>
+                    <button type="submit" class="btn-enviar">INGRESAR</button>
+                </form>
+            </div>
+
+            <div class="formulario cuenta-form">
+                <h2>CREAR CUENTA</h2>
+                <form>
+                    <div class="input-row">
+                        <div>
+                            <label for="reg-nombre">Nombre</label>
+                            <input type="text" id="reg-nombre" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <label for="reg-apellido">Apellido</label>
+                            <input type="text" id="reg-apellido" placeholder="Apellido">
+                        </div>
+                    </div>
+                    <label for="reg-mail">E-mail</label>
+                    <input type="email" id="reg-mail" placeholder="tu@email.com">
+                    <label for="reg-pass">Contraseña</label>
+                    <input type="password" id="reg-pass" placeholder="Mínimo 8 caracteres">
+                    <fieldset class="tipo-cuenta">
+                        <legend>Tipo de cuenta</legend>
+                        <label><input type="radio" name="tipo" checked> ⚽ Jugador</label>
+                        <label><input type="radio" name="tipo"> 🏟️ Dueño de complejo</label>
+                    </fieldset>
+                    <button type="submit" class="btn-enviar">CREAR CUENTA</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="seccion beneficios">
+            <h2>Con tu cuenta podés</h2>
+            <div class="valores">
+                <div class="valor"><span>📅</span><h3>Ver tus reservas</h3><p>Todos tus turnos en un solo lugar.</p></div>
+                <div class="valor"><span>🏆</span><h3>Anotarte a torneos</h3><p>Inscribí a tu equipo en un clic.</p></div>
+                <div class="valor"><span>💬</span><h3>Publicar avisos</h3><p>Encontrá jugadores en la comunidad.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Info -->
+            <div class="footer-col">
+                <h3>MatchPoint</h3>
+                <p>La plataforma definitiva para encontrar canchas y organizar torneos en tiempo real.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="buscar-cancha.html">Buscar Cancha</a>
+                <a href="torneos.html">Torneos</a>
+                <a href="comunidad.html">Comunidad</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+
+            <!-- Columna 3: Soporte y Legal -->
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <a href="nosotros.html#preguntas">Ayuda</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="https://juancruzibaceta-lang.github.io/portfolio/">🌐 Mi portfolio</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">✖️ X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MatchPoint. Todos los derechos reservados.</p>
+            <p class="credito">Proyecto de <a href="https://juancruzibaceta-lang.github.io/portfolio/">Juan Cruz Ibaceta</a>. Mirá mi portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

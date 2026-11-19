@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cancha - MatchPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / LOGO / NAV -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#00b84c"/>
+                <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" fill="white"/>
+            </svg>
+            <span>Match<span style="color: #00b84c;">Point</span></span>
+        </a>
+
+        <!-- Menú hamburguesa (solo se ve en tablet y celular, funciona solo con CSS) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="buscar-cancha.html" class="activo">Busca Cancha</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="cuenta.html" class="btn-cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER DE LA PÁGINA -->
+        <section class="page-banner">
+            <h1>Buscá tu cancha</h1>
+            <p>Elegí deporte, día y horario. Te mostramos solo los turnos que están libres de verdad.</p>
+        </section>
+
+        <!-- BUSCADOR + RESULTADOS -->
+        <section class="buscar-layout">
+            <aside class="filtros">
+                <h2>Filtros</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="f-ubicacion">Barrio</label>
+                        <select id="f-ubicacion">
+                            <option>Todos los barrios</option>
+                            <option>Almagro</option>
+                            <option>Balvanera</option>
+                            <option>Parque Chacabuco</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-deporte">Deporte</label>
+                        <select id="f-deporte">
+                            <option>Fútbol 5</option>
+                            <option>Fútbol 7</option>
+                            <option>Pádel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="f-fecha">Fecha</label>
+                        <input type="date" id="f-fecha" value="2026-01-01">
+                    </div>
+                    <div class="form-group">
+                        <label for="f-hora">Hora</label>
+                        <select id="f-hora">
+                            <option>18:00 hs</option>
+                            <option>19:00 hs</option>
+                            <option>20:00 hs</option>
+                            <option>21:00 hs</option>
+                        </select>
+                    </div>
+                    <fieldset class="checks">
+                        <legend>Servicios</legend>
+                        <label><input type="checkbox"> Techada</label>
+                        <label><input type="checkbox"> Vestuarios</label>
+                        <label><input type="checkbox"> Estacionamiento</label>
+                    </fieldset>
+                    <button type="submit" class="btn-enviar">APLICAR FILTROS</button>
+                </form>
+            </aside>
+
+            <div class="resultados">
+                <p class="resultados-cant"><strong>6 canchas</strong> disponibles en CABA</p>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-1">Fútbol 5</div>
+                    <div class="resultado-info">
+                        <h3>Distrito Pasco · Cancha 1</h3>
+                        <p class="resultado-dir">📍 Pasco 1250, CABA</p>
+                        <div class="horarios"><span class="horario">18:00</span><span class="horario ocupado">19:00</span><span class="horario">20:00</span><span class="horario">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$38.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-2">Fútbol 5</div>
+                    <div class="resultado-info">
+                        <h3>Qué Golazo · Cancha 3</h3>
+                        <p class="resultado-dir">📍 Av. Corrientes 4500, CABA</p>
+                        <div class="horarios"><span class="horario">18:00</span><span class="horario">19:00</span><span class="horario ocupado">20:00</span><span class="horario ocupado">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$42.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-3">Pádel</div>
+                    <div class="resultado-info">
+                        <h3>Club Centenera · Pádel 2</h3>
+                        <p class="resultado-dir">📍 Centenera 1200, Parque Chacabuco</p>
+                        <div class="horarios"><span class="horario ocupado">18:00</span><span class="horario">19:00</span><span class="horario">20:00</span><span class="horario">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$24.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-2">Fútbol 7</div>
+                    <div class="resultado-info">
+                        <h3>Qué Golazo · Cancha 1</h3>
+                        <p class="resultado-dir">📍 Av. Corrientes 4500, CABA</p>
+                        <div class="horarios"><span class="horario ocupado">18:00</span><span class="horario ocupado">19:00</span><span class="horario">20:00</span><span class="horario">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$56.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-1">Fútbol 5</div>
+                    <div class="resultado-info">
+                        <h3>Distrito Pasco · Cancha 2</h3>
+                        <p class="resultado-dir">📍 Pasco 1250, CABA</p>
+                        <div class="horarios"><span class="horario">18:00</span><span class="horario">19:00</span><span class="horario">20:00</span><span class="horario">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$38.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="resultado">
+                    <div class="img-card-bg card-img-3">Fútbol 5</div>
+                    <div class="resultado-info">
+                        <h3>Club Centenera · Cancha 1</h3>
+                        <p class="resultado-dir">📍 Centenera 1200, Parque Chacabuco</p>
+                        <div class="horarios"><span class="horario">18:00</span><span class="horario">19:00</span><span class="horario">20:00</span><span class="horario ocupado">21:00</span></div>
+                        <div class="resultado-pie">
+                            <p class="precio">$36.000 <span>por turno</span></p>
+                            <a href="cuenta.html" class="btn-reservar">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+                <p class="leyenda"><span class="horario">20:00</span> libre &nbsp; <span class="horario ocupado">20:00</span> ocupado</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Info -->
+            <div class="footer-col">
+                <h3>MatchPoint</h3>
+                <p>La plataforma definitiva para encontrar canchas y organizar torneos en tiempo real.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="buscar-cancha.html">Buscar Cancha</a>
+                <a href="torneos.html">Torneos</a>
+                <a href="comunidad.html">Comunidad</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+
+            <!-- Columna 3: Soporte y Legal -->
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <a href="nosotros.html#preguntas">Ayuda</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="https://juancruzibaceta-lang.github.io/portfolio/">🌐 Mi portfolio</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">✖️ X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MatchPoint. Todos los derechos reservados.</p>
+            <p class="credito">Proyecto de <a href="https://juancruzibaceta-lang.github.io/portfolio/">Juan Cruz Ibaceta</a>. Mirá mi portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - MatchPoint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / LOGO / NAV -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#00b84c"/>
+                <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="3" fill="white"/>
+            </svg>
+            <span>Match<span style="color: #00b84c;">Point</span></span>
+        </a>
+
+        <!-- Menú hamburguesa (solo se ve en tablet y celular, funciona solo con CSS) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="buscar-cancha.html">Busca Cancha</a></li>
+                <li><a href="torneos.html">Torneos</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="cuenta.html" class="btn-cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <h1>Sobre MatchPoint</h1>
+            <p>Nacimos para que organizar un partido en Buenos Aires deje de ser un lío.</p>
+        </section>
+
+        <section class="seccion nosotros-intro">
+            <div>
+                <h2>El problema</h2>
+                <p>La información de canchas y torneos está repartida en muchas redes sociales y llamados. Nunca sabés si el horario está libre de verdad, y no hay un solo lugar con todos los complejos y torneos.</p>
+            </div>
+            <div>
+                <h2>Nuestra solución</h2>
+                <p>Una página simple que junta todo en un solo lugar: un buscador por lugar, deporte, fecha y hora, complejos reales de CABA, mapa y contacto directo.</p>
+            </div>
+        </section>
+
+        <section class="propuesta">
+            <p><strong>Nuestra propuesta:</strong> reservar en segundos y no en minutos, con complejos confiables de la ciudad.</p>
+        </section>
+
+        <section class="seccion">
+            <h2>Lo que nos guía</h2>
+            <div class="valores">
+                <div class="valor"><span>⚡</span><h3>Dinamismo</h3><p>Reservás rápido, sin vueltas ni llamados.</p></div>
+                <div class="valor"><span>🛡️</span><h3>Confianza</h3><p>Trabajamos solo con complejos verificados.</p></div>
+                <div class="valor"><span>🏅</span><h3>Profesionalismo</h3><p>Torneos organizados con reglas claras.</p></div>
+                <div class="valor"><span>👁️</span><h3>Claridad</h3><p>Precios y horarios a la vista.</p></div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris">
+            <h2>Complejos aliados</h2>
+            <div class="grid-images">
+                <article class="card">
+                    <div class="img-card-bg card-img-1">Distrito Pasco</div>
+                    <h3>Pasco 1250, CABA</h3>
+                </article>
+                <article class="card">
+                    <div class="img-card-bg card-img-2">Qué Golazo</div>
+                    <h3>Av. Corrientes 4500, CABA</h3>
+                </article>
+                <article class="card">
+                    <div class="img-card-bg card-img-3">Club Centenera</div>
+                    <h3>Centenera 1200, Parque Chacabuco</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="preguntas">
+            <h2>Preguntas frecuentes</h2>
+            <details class="faq">
+                <summary>¿Tengo que pagar para usar MatchPoint?</summary>
+                <p>No. Buscar canchas y publicar en la comunidad es gratis. Solo pagás el turno o la inscripción al torneo.</p>
+            </details>
+            <details class="faq">
+                <summary>¿Cómo sé que el horario está libre?</summary>
+                <p>Los complejos cargan sus turnos en MatchPoint, así que lo que ves en verde está disponible en ese momento.</p>
+            </details>
+            <details class="faq">
+                <summary>Tengo un complejo, ¿cómo me sumo?</summary>
+                <p>Creá una cuenta como "Dueño de complejo" y nuestro equipo te contacta para verificar el lugar.</p>
+            </details>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Info -->
+            <div class="footer-col">
+                <h3>MatchPoint</h3>
+                <p>La plataforma definitiva para encontrar canchas y organizar torneos en tiempo real.</p>
+            </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <a href="buscar-cancha.html">Buscar Cancha</a>
+                <a href="torneos.html">Torneos</a>
+                <a href="comunidad.html">Comunidad</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+
+            <!-- Columna 3: Soporte y Legal -->
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <a href="nosotros.html#preguntas">Ayuda</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-col">
+                <h4>Seguinos</h4>
+                <div class="social-icons">
+                    <a href="https://juancruzibaceta-lang.github.io/portfolio/">🌐 Mi portfolio</a>
+                    <a href="#">📷 Instagram</a>
+                    <a href="#">✖️ X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MatchPoint. Todos los derechos reservados.</p>
+            <p class="credito">Proyecto de <a href="https://juancruzibaceta-lang.github.io/portfolio/">Juan Cruz Ibaceta</a>. Mirá mi portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
